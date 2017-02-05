@@ -1,0 +1,5 @@
+192.168.201.2;ubuntu.local;PTR;tcp;22;ssh;open;;protocol 2.0;syn-ack;;10;
+192.168.201.3;centos.local;PTR;tcp;22;ssh;open;OpenSSH;protocol 2.0;syn-ack;6.6.1;10;cpe:/a:openbsd:openssh:6.6.1
+192.168.201.3;centos.local;PTR;tcp;80;http;open;Apache httpd;(CentOS) PHP/5.4.16;syn-ack;2.4.6;10;cpe:/a:apache:http_server:2.4.6
+192.168.201.3;centos.local;PTR;tcp;111;rpcbind;open;;RPC #100000;syn-ack;2-4;10;
+192.168.201.3;centos.local;PTR;tcp;3306;mysql;open;MySQL;;syn-ack;5.5.52-MariaDB;10;cpe:/a:mysql:mysql:5.5.52-mariadb
