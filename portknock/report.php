@@ -2,6 +2,8 @@
 <html lang="en">
 <head>
  <meta charset="UTF-8">
+ <meta name="author" content="Bernard Parinas">
+ <meta name="emailAddress" content="bparinas@hotmail.com" />
  <title>Port Scan Report</title>
 </head>
 <body>
@@ -22,14 +24,12 @@
    <th>Product</th>
    <th>Version</th>
   </tr>
-HERE;
+  HERE;
 
-//<?php
-$row = 1;
+  $row = 1;
 
-if (($handle = fopen("scanout.csv", "r")) !== FALSE) {
+  if (($handle = fopen("scanout.csv", "r")) !== FALSE) {
     while (($data = fgetcsv($handle, ",")) !== FALSE) {
-        //if($row == 1){ $row++; continue; } // delete the first line
         $num = count($data);
         $row++;
         for ($c=0; $c < $num; $c++) {
@@ -47,7 +47,7 @@ if (($handle = fopen("scanout.csv", "r")) !== FALSE) {
         }
     }
     fclose($handle);
-}
+  }
 
   print "</table>";
 ?>
