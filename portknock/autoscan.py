@@ -1,4 +1,7 @@
 #!/usr/bin/python
+# author: Bernard Parinas
+# email: bparinas@hotmail.com
+
 import nmap
 res = open('tmp.csv','w')
 host = open('hosts.txt', 'r')
